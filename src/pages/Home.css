@@ -1,0 +1,126 @@
+.home-container {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #f8f1e3;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #5a3e36;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #6d4c41;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8d6e63;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #6d4c41;
+  }
+  
+  .hero-image {
+    background: url('https://images.unsplash.com/photo-1479895256313-1c6a9c5b14a1') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Featured Section */
+  .featured-section {
+    text-align: center;
+    padding: 50px 10%;
+  }
+  
+  .featured-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .painting-card {
+    background: #fdfaf5;
+    border: 1px solid #e0d6c7;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .painting-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .painting-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .painting-card h3 {
+    color: #5a3e36;
+  }
+  
+  /* Why Us Section */
+  .why-us-section {
+    background: #f5f5f5;
+    padding: 50px 10%;
+    text-align: center;
+  }
+  
+  .advantages {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .advantage {
+    max-width: 300px;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    background-color: #8d6e63;
+    color: #fff;
+    text-align: center;
+    padding: 40px 10%;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #8d6e63;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f5f1e3;
+    color: #6d4c41;
+  }
+  

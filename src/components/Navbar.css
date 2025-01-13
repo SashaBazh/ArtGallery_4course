@@ -1,0 +1,136 @@
+/* Основные стили для Navbar */
+.custom-navbar {
+    background-color: #f8f9fa; /* Светлый фон */
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-icon {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #a67c52; /* Акцентный цвет */
+  }
+  
+  /* Dropdown */
+  .nav-dropdown {
+    position: relative;
+  }
+  
+  .nav-dropdown-title {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+  }
+  
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 150px;
+  }
+  
+  .nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #555;
+    display: block;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0e6da;
+    color: #333;
+  }
+  
+  /* Spinner */
+  .nav-spinner {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+  }
+  
+  /* Адаптивные стили */
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #f8f9fa;
+      width: 100%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+  
+    .nav-links-active {
+      display: flex;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,121 @@
+/* Общие стили для страницы админки */
+.admin-container {
+    font-family: 'Merriweather', serif;
+    color: #3c2f2f;
+    background-color: #f5ece4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Заголовок админки */
+  .admin-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #5e4429;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Стили для навигации между вкладками */
+  .nav-tabs {
+    background-color: #e0d5c1;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-tabs .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .nav-tabs .nav-link {
+    color: #7d5c42;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    background-color: #d4c1a3;
+    color: #3c2f2f;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #5e4429;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Содержимое вкладок */
+  .tab-content {
+    background-color: #ffffff;
+    border: 1px solid #d9d2c4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили кнопок в админке */
+  .admin-button {
+    background-color: #5e4429;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-button:hover {
+    background-color: #3c2f2f;
+  }
+  
+  /* Загрузка и ошибка */
+  .loading-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .loading-spinner {
+    color: #5e4429;
+    font-size: 1.5rem;
+  }
+  
+  .error-message {
+    text-align: center;
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  /* Анимация для вкладок */
+  .tab-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

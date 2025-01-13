@@ -1,0 +1,174 @@
+/* Checkout.css */
+
+/* Основной контейнер страницы */
+.checkout-container {
+    background-color: #f8f3ed;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Заголовки */
+  .checkout-container h2,
+  .checkout-container h4,
+  .checkout-container h5 {
+    text-align: center;
+    color: #5a4636;
+    margin-bottom: 20px;
+  }
+  
+  /* Таблица товаров */
+  .checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  .checkout-table thead {
+    background-color: #e6d9c6;
+    color: #5a4636;
+  }
+  .checkout-table th,
+  .checkout-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .checkout-table tbody tr:hover {
+    background-color: #f3ede5;
+  }
+  
+  /* Общая сумма */
+  .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    color: #5a4636;
+    margin-bottom: 30px;
+  }
+  
+  /* Форма */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .checkout-form .form-label {
+    color: #5a4636;
+    font-weight: bold;
+  }
+  
+  .checkout-form .form-control {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .checkout-form .form-control:focus {
+    border-color: #c09a6b;
+    box-shadow: 0 0 4px rgba(192, 154, 107, 0.8);
+  }
+  
+  /* Кнопка оформления заказа */
+  .checkout-button {
+    background-color: #c09a6b;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .checkout-button:hover {
+    background-color: #a88256;
+  }
+  .checkout-button:disabled {
+    background-color: #e6d9c6;
+    cursor: not-allowed;
+  }
+  
+  /* Сообщения об ошибке и успехе */
+  .checkout-alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .checkout-alert.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  .checkout-alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Сообщение о пустой корзине */
+  .checkout-empty {
+    text-align: center;
+    color: #5a4636;
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
+  .checkout-empty a {
+    color: #c09a6b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .checkout-empty a:hover {
+    color: #a88256;
+  }
+  
+  /* Спиннер загрузки */
+  .checkout-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #5a4636;
+    font-size: 1.2rem;
+  }
+  
+
+  .checkout-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5a4636;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-submit-btn:hover {
+    background-color: #33281f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-submit-btn:active {
+    background-color: #33281f;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  

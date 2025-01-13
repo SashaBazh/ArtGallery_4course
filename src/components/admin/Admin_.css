@@ -1,0 +1,165 @@
+/* Общие стили для административной панели */
+.admin-page {
+    font-family: 'Merriweather', serif;
+    background-color: #f9f6f0;
+    color: #5e4429;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Заголовки */
+  .admin-page h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3c2f2f;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Таблица */
+  .table {
+    background-color: #ffffff;
+    border: 1px solid #d9d2c4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th {
+    background-color: #e0d5c1;
+    color: #3c2f2f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .table td {
+    text-align: center;
+    padding: 15px;
+    vertical-align: middle;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f5ece4;
+  }
+  
+  /* Кнопки действий */
+  .admin-button {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Кнопки: редактировать */
+  .admin-button-edit {
+    background-color: #f5c268;
+    color: #3c2f2f;
+    border: none;
+  }
+  
+  .admin-button-edit:hover {
+    background-color: #e2a952;
+  }
+  
+  /* Кнопки: удалить */
+  .admin-button-delete {
+    background-color: #e57373;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .admin-button-delete:hover {
+    background-color: #d9534f;
+  }
+  
+  /* Кнопки: добавить */
+  .admin-button-add {
+    background-color: #90caf9;
+    color: #3c2f2f;
+    border: none;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .admin-button-add:hover {
+    background-color: #64b5f6;
+  }
+  
+  /* Модальное окно */
+  .modal-header {
+    background-color: #e0d5c1;
+    color: #3c2f2f;
+    text-transform: uppercase;
+    border-bottom: none;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    background-color: #f9f6f0;
+  }
+  
+  .modal-footer {
+    background-color: #e0d5c1;
+    border-top: none;
+  }
+  
+  /* Поля формы */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #d9d2c4;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    border-color: #90caf9;
+    box-shadow: 0 0 4px #64b5f6;
+  }
+  
+  /* Лоадер */
+  .spinner {
+    display: block;
+    margin: 20px auto;
+    color: #5e4429;
+  }
+  
+  /* Сообщения */
+  .alert {
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+  }
+  
+  .alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+  }
+  
+  /* Элементы изображения */
+  .table-image {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  

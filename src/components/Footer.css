@@ -1,0 +1,60 @@
+/* Основные стили для Footer */
+.custom-footer {
+    background-color: #2c2c2c;
+    /* Темный фон */
+    color: #f5f5f5;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-description,
+.footer-column p {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.social-link {
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #a67c52;
+    /* Акцентный цвет */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #ccc;
+}

@@ -1,0 +1,162 @@
+/* Основной контейнер профиля */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f1e3;
+    /* Бежевый фон для художественной эстетики */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-form {
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #5a3e36;
+    /* Темно-коричневый цвет */
+    font-weight: bold;
+}
+
+.form-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-message.success {
+    background-color: #e6f4ea;
+    color: #2e7d32;
+}
+
+.form-message.error {
+    background-color: #fce8e6;
+    color: #d32f2f;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6e584a;
+    /* Коричневый цвет для текста */
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6c3b5;
+    /* Пастельная обводка */
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fcfaf7;
+    color: #4e3c34;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #a67c52;
+    /* Акцентный коричневый цвет */
+    outline: none;
+}
+
+.form-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.avatar-image {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #d6c3b5;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.edit-btn,
+.cancel-btn,
+.save-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Кнопка редактирования – коричневый */
+.edit-btn {
+    background-color: #8d6e63;
+    /* Темно-коричневый */
+}
+
+.edit-btn:hover {
+    background-color: #6d4c41;
+    /* Более глубокий коричневый */
+    transform: translateY(-2px);
+}
+
+/* Кнопка отмены – теплый песочный */
+.cancel-btn {
+    background-color: #c1a57b;
+    /* Песочный цвет */
+}
+
+.cancel-btn:hover {
+    background-color: #a67c52;
+    /* Темный песочный */
+    transform: translateY(-2px);
+}
+
+/* Кнопка сохранения – приглушенный золотистый */
+.save-btn {
+    background-color: #d4af7a;
+    /* Золотистый оттенок */
+}
+
+.save-btn:hover {
+    background-color: #b88a5b;
+    /* Более насыщенный золотистый */
+    transform: translateY(-2px);
+}
+
+
+.loading-spinner {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6e584a;
+}
+
+/* Дополнительные акценты */
+.profile-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #a67c52, #8d6e63);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
