@@ -35,7 +35,7 @@ const CartProvider = ({ children }) => {
   const addToCart = async (productId, quantity = 1) => {
     if (!user) return;
     try {
-      await api.post('/cart', { product_id: productId, quantity });
+      await api.post('/cart/', { product_id: productId, quantity });
       await fetchCart();
     } catch (error) {
       console.error('Ошибка при добавлении в корзину:', error);
