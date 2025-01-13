@@ -93,7 +93,7 @@ api.interceptors.response.use(
 
       try {
         const response = await axios.post(
-          'http://localhost:8000/api/token/refresh',
+          'https://course.excellentjewellery.ru/gallery/api/token/refresh',
           { refresh_token: tokens.refresh_token }
         );
 

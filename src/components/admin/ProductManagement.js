@@ -95,7 +95,7 @@ const ProductManagement = () => {
   };
 
   const getImageUrl = (imagePath) => {
-    return `http://localhost:8000/api/data/stream?image_path=${encodeURIComponent(imagePath)}`;
+    return `https://course.excellentjewellery.ru/gallery/api/data/stream?image_path=${encodeURIComponent(imagePath)}`;
   };
 
   const openModal = (product = null) => {
