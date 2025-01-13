@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getAuthTokens, setAuthTokens, clearAuthTokens } from '../utils/auth';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'https://course.excellentjewellery.ru/gallery/api',
 });
 
 const enhancedLogger = (...args) => {
