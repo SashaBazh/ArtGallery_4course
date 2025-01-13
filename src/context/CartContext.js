@@ -33,12 +33,44 @@ const CartProvider = ({ children }) => {
   }, [user]);
 
   const addToCart = async (productId, quantity = 1) => {
-    if (!user) return;
+    if (!user) {
+      console.warn('Пользователь не авторизован. Добавление в корзину невозможно.');
+      return;
+    }
+  
+    console.log('Попытка добавить товар в корзину:', {
+      productId,
+      quantity,
+      userId: user.id, // предполагается, что user содержит id пользователя
+    });
+  
     try {
-      await api.post('/cart/', { product_id: productId, quantity });
+      console.log('Отправка POST-запроса на сервер...');
+      const response = await api.post('/cart/', { product_id: productId, quantity });
+  
+      console.log('Ответ от сервера при добавлении в корзину:', {
+        status: response.status,
+        data: response.data,
+      });
+  
+      console.log('Обновление корзины после успешного добавления...');
       await fetchCart();
+      console.log('Корзина успешно обновлена.');
     } catch (error) {
-      console.error('Ошибка при добавлении в корзину:', error);
+      if (error.response) {
+        console.error('Ошибка сервера при добавлении в корзину:', {
+          status: error.response.status,
+          data: error.response.data,
+        });
+      } else if (error.request) {
+        console.error('Сетевая ошибка при добавлении в корзину. Запрос не был выполнен:', {
+          request: error.request,
+        });
+      } else {
+        console.error('Неизвестная ошибка при добавлении в корзину:', {
+          message: error.message,
+        });
+      }
     }
   };
 
