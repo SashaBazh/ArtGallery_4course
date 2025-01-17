@@ -70,7 +70,7 @@ const ProductManagement = () => {
       let response;
       if (currentProduct.id) {
         // Обновление
-        response = await axios.put('/products', formData, {
+        response = await axios.put('/products/', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
         });
         // Локально обновляем список продуктов
@@ -81,7 +81,7 @@ const ProductManagement = () => {
         );
       } else {
         // Создание
-        response = await axios.post('/products', formData, {
+        response = await axios.post('/products/', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
         });
         // Локально добавляем новый продукт в список
